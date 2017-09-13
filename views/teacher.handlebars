@@ -1,0 +1,25 @@
+<h1> Teacher's Dashboard</h1>
+<h3>Name Of The Teacher :- {{teacher_name}}</h3>
+<table style="width:100%;">
+  <tr>
+    <th>{{studentid}}</th>
+    <th>{{name}}</th>
+    <th>{{gender}}</th>
+    <th>Get Report</th>
+  </tr>
+  {{#each rows}}
+  <tr>
+    <td>{{this.st_id}}</td>
+    <td>{{this.s_name}}</td>
+    <td>{{this.gender}}</td>
+    <td><button><a href="/student_report?stid={{this.st_id}}" class="report">VIEW REPORT</a></button></td>
+  </tr>
+  {{/each}}
+</table>
+<button id="back-home">BACK</button>
+
+<script>
+  document.getElementById("back-home").addEventListener("click", function () {
+    location.href = "/home";
+  });
+</script>

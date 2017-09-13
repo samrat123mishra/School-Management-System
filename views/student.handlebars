@@ -1,0 +1,30 @@
+<h1> Student's Marksheet</h1>
+
+<table style="width:100%;">
+  <tr>
+    <th>{{studentid}}</th>
+    <th>{{name}}</th>
+    <th>{{maths}}</th>
+    <th>{{english}}</th>
+    <th>{{history}}</th>
+    <th>{{geography}}</th>
+  </tr>
+  {{#each rows}}
+  <tr>
+    <td>{{this.st_id}}</td>
+    <td>{{this.s_name}}</td>
+    <td>{{this.maths}}</td>
+    <td>{{this.english}}</td>
+    <td>{{this.history}}</td>
+    <td>{{this.geography}}</td>
+  </tr>
+  {{/each}}
+</table>
+
+<button id="back-home">BACK</button>
+<script>
+  document.getElementById("back-home").addEventListener("click", function () {
+    location.href = "/home";
+  });
+
+</script>
