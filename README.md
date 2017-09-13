@@ -1,0 +1,2 @@
+# School-Management-System
+This is a website based application where a user of a school entity logins and able to view his/her dashboard according to teacher and student respectively, where a student can view his/her marksheet and teacher can view the list of student under whom they studied.This is application is implemented using PostgreSQL as DB,node JS for server side scripting and handlebars as a templeting engine. 
